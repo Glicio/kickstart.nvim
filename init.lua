@@ -52,6 +52,7 @@ vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 
+vim.opt.wrap = false
 
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
