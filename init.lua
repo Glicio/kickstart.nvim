@@ -52,6 +52,7 @@ vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 
+
 vim.opt.wrap = false
 
 -- Install package manager
@@ -169,7 +170,6 @@ require('lazy').setup({
       vim.cmd.colorscheme 'onedark'
     end,
   },
-
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
@@ -576,6 +576,15 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+vim.cmd.highlight'Normal guibg=none'
+vim.cmd.highlight'Normal ctermbg=none'
+vim.cmd.highlight'NonText guibg=none'
+vim.cmd.highlight'NonText ctermbg=none'
+vim.cmd.highlight'EndOfBuffer guibg=none'
+vim.cmd.highlight'EndOfBuffer ctermbg=none'
+vim.cmd.highlight'Folded guibg=none'
+vim.cmd.highlight'Folded ctermbg=none'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
